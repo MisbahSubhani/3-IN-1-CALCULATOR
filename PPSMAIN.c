@@ -4,7 +4,8 @@
 #include <math.h>
 
 int main(){
-    int a,b,c,d;
+    int a,d;
+    float b,c;
     printf("1.BMI CALCULATION\n2.CALCULATOR\n3.PROFIT OR LOSS\n ");
     
     scanf("%d",&a);
@@ -67,11 +68,11 @@ int main(){
     switch(a){
         case 1:
         printf("Enter Your Weight(kg): ");
-        scanf("%d",&b);
+        scanf("%f",&b);
         printf("Enter Your Height(m): ");
-        scanf("%d",&c);
+        scanf("%f",&c);
         
-        printf("Your BMi Value is: %d",(b*b)/c);
+        printf("Your BMi Value is: %.2f",b/(c*c);
         break;
         case 3:
         printf("Enter CostPrice: ");
